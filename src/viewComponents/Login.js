@@ -2,9 +2,7 @@ import React,{useState} from 'react';
 import '../App.css';
 import axios from 'axios';
 import google from '../icons8-google-plus-48.png';
-import facebook from '../facebook.png'
-import github from '../icons8-github-48.png';
-import linkdin from "../icons8-linkedin-48.png"
+
 
 
 import OutlinedInput from '@material-ui/core/OutlinedInput';
@@ -144,54 +142,9 @@ const useStyles = makeStyles({
                     </a>
                     </Box>
                 </Grid>
-              
-                <Grid item xs={6} >
-                  <Box bgcolor="primary.main" color="primary.contrastText" p={1} justifyContent="space-around"> 
-                  <a href="http://localhost:5000/auth/facebook"  style={{cursor:"pointer",textDecoration:"none",color:"white"}}>
-                      <Grid container >
-                        <Grid item xs={3}>
-                            <Avatar alt="google" src={facebook} />
-                        </Grid>
-                            <Grid item xs={8}>
-                              <Typography  variant="h6" component="h2">continue with fb</Typography>
-                            </Grid>
-                      </Grid>
-                    </a>
-                    </Box>
-                </Grid>
-
-                <Grid item xs={6} >
-                    <Box bgcolor="black" color="primary.contrastText" p={1}>
-                    <a href="http://localhost:5000/auth/github" style={{cursor:"pointer",textDecoration:"none",color:"white"}}>
-                      <Grid container >
-                        <Grid item xs={3}>
-                            <Avatar alt="github" src={github} />
-                        </Grid>
-                        <Grid item xs={8}>
-                          < Typography  variant="h6" component="h2">continue with github</Typography>
-                        </Grid>
-                      </Grid>
-                      </a>
-                    </Box>
-                </Grid>
-
-                <Grid item xs={6} >
-                    <Box bgcolor="#003F67" color="primary.contrastText" p={1}>
-                    <a href="http://localhost:5000/auth/linkdin" style={{cursor:"pointer",textDecoration:"none",color:"white"}}>
-                      <Grid container >
-                        <Grid item xs={3}>
-                            <Avatar alt="linkdin" src={linkdin} />
-                        </Grid>
-                        <Grid item xs={8}>
-                          < Typography  variant="h6" component="h2">continue with linkdin</Typography>
-                        </Grid>
-                      </Grid>
-                      </a>
-                    </Box>
-                </Grid>
                 </Grid>
                 </Box>
-                <p  >or login with email and password</p>
+                <p>or login with email and password</p>
                 <CardContent >
                 <Typography variant="h6" component="h2" style={{color:"red"}}>{resultMsg}</Typography>
                     <FormControl fullWidth variant="outlined" size="small">

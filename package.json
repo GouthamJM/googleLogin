@@ -1,5 +1,5 @@
 {
-  "name": "hakthonproject",
+  "name": "GoogleLogin",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,6 +12,7 @@
     "axios": "^0.20.0",
     "cors": "^2.8.5",
     "passport": "^0.4.1",
+    "passport-facebook": "^3.0.0",
     "passport-google-oauth2": "^0.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
